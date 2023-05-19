@@ -1,0 +1,190 @@
+@font-face {
+    font-family: "Lato Bold";
+    src: url("./fonts/Lato-Bold.ttf");
+    src: url("./fonts/Lato-Bold.ttf") format("ttf"),
+}
+@font-face {
+    font-family: "PlayTime";
+    src: url("./fonts/playtime.ttf");
+    src: url("./fonts/playtime.ttf") format("ttf"),
+}
+*{
+    margin: 0; 
+    padding: 0;
+}
+body
+{
+    font-family: 'Lato Bold', Arial, sans-serif;
+    user-select: none;
+    -moz-user-select: none;
+}
+section.zoe-contain{
+    background: linear-gradient(90deg, #efd5ff 0%, #515ada 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    min-width: 320px;
+    height: 100vh;
+    min-height: 530px;
+    overflow: hidden;
+}
+section.zoe-contain > div.contain
+{
+    width: 320px;
+    height: 530px;
+    background: url('./img/background.svg') no-repeat;
+    border-radius: .5rem;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0px 10px 15px -3px rgba(0,0,0,0.1);
+    -moz-box-shadow: 0px 10px 15px -3px rgba(0,0,0,0.1);
+    
+}
+section.zoe-contain > div.contain > div.zoe-animation-content
+{
+    width: 100%;
+    height: 250px;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+    
+}
+section.zoe-contain > div.contain > div.zoe-animation-content > div.zoe-baby-rabit
+{
+    width: 220px;
+    height: 300px;
+    background: url('./img/rabit.svg') no-repeat;
+    margin-top: -1.2rem;
+    animation: float-rabit 5s infinite;
+    position: relative;
+}
+section.zoe-contain > div.contain > div.zoe-animation-content > div.zoe-baby-rabit::before
+{
+    content: '';
+    width: 100px;
+    height: 250px;
+    background: url('./img/botle.svg') no-repeat;
+    animation: float-complements 3s infinite;
+    position: absolute;
+    top: .2rem;
+    right: -1rem;
+}
+section.zoe-contain > div.contain > div.zoe-animation-content > div.zoe-baby-rabit::after
+{
+    content: '';
+    width: 100px;
+    height: 250px;
+    background: url('./img/baby-paciffier.svg') no-repeat;
+    animation: float-complements 2s infinite;
+    position: absolute;
+    top: .2rem;
+    left: -2rem;
+}
+section.zoe-contain > div.contain > div.zoe-text-content
+{
+    width: 100%;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+section.zoe-contain > div.contain > div.zoe-text-content > article
+{
+    width: 220px;
+    height: auto;
+    max-height: 150px;
+    margin-top: -2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    line-height: 30px;
+}
+section.zoe-contain > div.contain > div.zoe-text-content > article > h6, span
+{
+    color: #C4AA92
+}
+section.zoe-contain > div.contain > div.zoe-text-content > article > span{
+    font-size: .7rem;
+}
+section.zoe-contain > div.contain > div.zoe-text-content > article > h2
+{
+    color: #E5B1BA;
+    font-family: 'PlayTime', Arial, sans-serif;
+    font-weight: 600;
+    font-size: normal;
+}
+section.zoe-contain > div.contain > div.zoe-text-content > article > h2.baby-name
+{
+    display: flex;
+}
+section.zoe-contain > div.contain > div.zoe-text-content > article > h2.baby-name::before
+{
+    content: '';
+    width: 8px;
+    height: 8px;
+    border-radius: 8px;
+    background: #E5B1BA;
+    margin-right: .7rem;
+    margin-top: .7rem;
+}
+section.zoe-contain > div.contain > div.zoe-text-content > article > h2.baby-name::after
+{
+    content: '';
+    width: 8px;
+    height: 8px;
+    border-radius: 8px;
+    background: #E5B1BA;
+    margin-left: .7rem;
+    margin-top: .7rem;
+}
+section.zoe-contain > div.contain > div.zoe-button-action
+{
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+section.zoe-contain > div.contain > div.zoe-button-action > div.buttons
+{
+    width: 150px;
+    height: 50px;
+    display: flex;
+    align-items: space-between;
+    justify-content: space-between;
+}
+section.zoe-contain > div.contain > div.zoe-button-action > div.buttons > a
+{
+    width: 70px;
+    height: 30px;
+    font-size: .6rem;
+    text-decoration: none;
+    color: #373737;
+    background: #C4AA92;
+    border-radius: .3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 10px 15px -3px rgba(0,0,0,0.1);
+    -moz-box-shadow: 0px 10px 15px -3px rgba(0,0,0,0.1);
+    color: #f9f9fb;
+}
+section.zoe-contain > div.contain > div.zoe-button-action > span.zoe-footer-text
+{
+    font-size: .6rem;
+}
+
+@keyframes float-rabit{
+    0%{ margin-top: -1rem; }
+    50%{ margin-top: 0rem; }
+    100%{ margin-top: -1rem; }
+}
+
+@keyframes float-complements{
+    0%{ margin-top: 1rem; }
+    50%{ margin-top: 0rem; }
+    100%{ margin-top: 1rem; }
+}
